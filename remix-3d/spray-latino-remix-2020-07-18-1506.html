@@ -121,6 +121,13 @@ function init() {
 
 	toggleBackgroundGradient();
 
+	
+	if ( !location.hash && location.protocol === "https:" ) {
+
+		window.history.pushState( "", "", "./" );
+
+	}
+
 }
 
 
